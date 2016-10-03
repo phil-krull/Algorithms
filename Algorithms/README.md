@@ -15,6 +15,3 @@ This page will display all of our Algorithms for the specified Algorithm group.
   - .length
   - .split()
   - .join()
-  - .
-
-###Time complexity 
