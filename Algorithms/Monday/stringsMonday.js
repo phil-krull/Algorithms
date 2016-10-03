@@ -2,9 +2,9 @@
 function removeBlanks(str){
   return str.split(" ").join("");
 }
-// console.log(removeBlanks('Pl ayTha tF   unkyM usi     c  '));
+console.log(removeBlanks('Pl ayTha tF   unkyM usi     c  '));
 
-// Remove Blanks without split
+// Remove Blanks without split, and new array
 function removeBlanksTwo(str){
   if(typeof str !== "string"){
     return 0;
@@ -15,12 +15,11 @@ function removeBlanksTwo(str){
       arr.push(str[idx]);
     }
   }
-  var end = t.getTime();
-  console.log(end);
   return arr.join("");
 }
-// console.log(removeBlanksTwo('Pl ayTha tF   unkyM usi     c  '));
+console.log(removeBlanksTwo('Pl ayTha tF   unkyM usi     c  '));
 
+// Remove Blanks without split, and new string
 function removeBlanksThree(str){
   if(typeof str !== "string"){
     return 0;
@@ -33,7 +32,7 @@ function removeBlanksThree(str){
   }
   return newStr;
 }
-// console.log(removeBlanksThree('Pl ayTha tF   unkyM usi     c  '));
+console.log(removeBlanksThree('Pl ayTha tF   unkyM usi     c  '));
 
 // Keep digits of a string
 function getDigits(str){
@@ -48,7 +47,7 @@ function getDigits(str){
   }
   return num
 }
-// console.log(getDigits("0s1z3y5w7h9a2t4?6!8?0"));
+console.log(getDigits("0s1z3y5w7h9a2t4?6!8?0"));
 
 // Remove string index of an array where length < num
 function shortenStringArray(arr, num){
@@ -63,4 +62,4 @@ function shortenStringArray(arr, num){
   }
   return arr;
 }
-// console.log(shortenStringArray(["Today", "is", "Monday", "the", "first", "day", "of", "the", "week", "is"], 4));
+console.log(shortenStringArray(["Today", "is", "Monday", "the", "first", "day", "of", "the", "week", "is"], 4));
