@@ -10,3 +10,11 @@ This page will display all of our Algorithms for the specified Algorithm group.
 ###Mutable vs Immutable
   - Immutable: Can not be change after creation. i.e. Strings
   - Mutable: Can be altered, i.e. Arrays
+
+###String methods
+  - .length
+  - .split()
+  - .join()
+  - .
+
+###Time complexity 

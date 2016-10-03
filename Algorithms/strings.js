@@ -1,10 +1,10 @@
-// With split
+// Remove Blanks with split
 function removeBlanks(str){
   return str.split(" ").join("");
 }
 // console.log(removeBlanks('Pl ayTha tF   unkyM usi     c  '));
 
-// Without split
+// Remove Blanks without split
 function removeBlanksTwo(str){
   if(typeof str !== "string"){
     return 0;
@@ -15,10 +15,27 @@ function removeBlanksTwo(str){
       arr.push(str[idx]);
     }
   }
+  var end = t.getTime();
+  console.log(end);
   return arr.join("");
 }
 // console.log(removeBlanksTwo('Pl ayTha tF   unkyM usi     c  '));
 
+function removeBlanksThree(str){
+  if(typeof str !== "string"){
+    return 0;
+  }
+  var newStr = "";
+  for(var idx = 0; idx < str.length; idx++){
+    if(str[idx] != " "){
+      newStr += str[idx];
+    }
+  }
+  return newStr;
+}
+// console.log(removeBlanksThree('Pl ayTha tF   unkyM usi     c  '));
+
+// Keep digits of a string
 function getDigits(str){
   if(typeof str !== "string"){
     return 0;
@@ -33,19 +50,17 @@ function getDigits(str){
 }
 // console.log(getDigits("0s1z3y5w7h9a2t4?6!8?0"));
 
-function shortenStringArray(arr, length){
-  var count = 0;
+// Remove string index of an array where length < num
+function shortenStringArray(arr, num){
   for(var idx = 0; idx < arr.length; idx++){
-    console.log(arr[idx].length);
-    if(arr[idx].length < length){
-      for(var j = idx; j < arr.length; j++){
+    if(arr[idx].length < num){
+      for(var j = idx; j < arr.length-1; j++){
         arr[j] = arr[j + 1];
       }
-      count++;
+      arr.length--;
+      idx--;
     }
   }
-  console.log(arr);
-  // arr.length -= count;
-  return count;
+  return arr;
 }
-console.log(shortenStringArray(["Today", "is", "Monday", "the", "first", "day", "of", "the", "week"], 4));
+// console.log(shortenStringArray(["Today", "is", "Monday", "the", "first", "day", "of", "the", "week", "is"], 4));
