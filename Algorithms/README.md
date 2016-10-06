@@ -25,3 +25,9 @@ switch(expression){
     break;
   default: console.log('When expression is neither a nor b')
 }
+
+###Associative Arrays(Javascript Objects)
+
+  - for...in loops
+  - Indexes as stings, not numbers
+  - Data structure that contains key:value pairs
