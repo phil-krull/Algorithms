@@ -18,11 +18,11 @@ This page will display all of our Algorithms for the specified Algorithm group.
 
 ###Switch/Case statements
 
-switch(expression){
+switch(expression){  
   case 'expression is a': console.log('found a');
-    break;
+    break;  
   case 'expression is b': console.log('found b');
-    break;
+    break;  
   default: console.log('When expression is neither a nor b')
 }
 
